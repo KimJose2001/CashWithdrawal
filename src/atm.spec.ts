@@ -32,23 +32,20 @@ describe('ATM', () => {
         const withdrawAmmount = 300
         const result = ATM.solutions(bills, billsAmmount, initialVariation, withdrawAmmount, 0)
         const most = ATM.mostBills(result)
-        const array = [0, 0, 20, 20]
-        console.log(most)
+        const array = [0, 0, 10, 10]
         expect(most).toEqual(array)
     })
 
-    /*it('should return configuration with less bills', () => {
+    it('should return configuration with less bills', () => {
         const bills = [100, 50, 20, 10]
         const billsAmmount = [10, 10, 10, 10]
         const initialVariation = new Array(4).fill(0)
         const withdrawAmmount = 300
         const result = ATM.solutions(bills, billsAmmount, initialVariation, withdrawAmmount, 0)
-        const most = ATM.lessBills(result)
-
-        expect(most.some(function (element){
-            return element == [3, 0, 0, 0]
-         }))
-    })*/
+        const less = ATM.lessBills(result)
+        const array = [3, 0, 0, 0]
+        expect(less).toEqual(array)
+    })
 
 
     

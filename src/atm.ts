@@ -43,26 +43,34 @@ export class ATM {
       }
 
     public static mostBills (list: number[][]): number[]{
-        const aux = 0
-        const temp = 0
+        let aux = 0
+        let temp = 0
         for(let i = 0; i < list.length; i++){
             if (aux < list[i].reduce((a: number, b: number) => a + b, 0)) {
-                let aux = list[i].reduce((a: number, b: number) => a + b, 0)
-                let temp = i
+                aux = list[i].reduce((a: number, b: number) => a + b, 0)
+                temp = i
+                //console.log(list[temp])
+                //console.log(aux)
             }
         }
+        //console.log("teste: ")
+        //console.log(list[temp])
         return list[temp]
     }
 
     public static lessBills (list: number[][]): number[]{
-        const aux = 100
-        const temp = 0
+        let aux = 1000
+        let temp = 0
         for(let i = 0; i < list.length; i++){
             if (aux > list[i].reduce((a: number, b: number) => a + b, 0)) {
-                let aux = list[i].reduce((a: number, b: number) => a + b, 0)
-                let temp = i
+                aux = list[i].reduce((a: number, b: number) => a + b, 0)
+                temp = i
+                //console.log(list[temp])
+                //console.log(aux)
             }
         }
+        //console.log("teste: ")
+        //console.log(list[temp])
         return list[temp]
     }
 
