@@ -1,3 +1,3 @@
-# Triangle classification exercise
+# Withdrawal Configuration Algorithm
 
-Creating automated tests with jest for our software testing class.
+Creating automated tests with jest for Withdrawal Configuration Algorithm.
