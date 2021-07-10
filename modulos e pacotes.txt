@@ -1,2 +1,0 @@
-O programa foi desenvolvido em TS e testado utilizando Jest,
-foram utilizados os mesmos modulos e pacotes da Atividade 01 - Tipos de Triangulos.
